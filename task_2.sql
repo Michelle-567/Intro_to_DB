@@ -15,10 +15,10 @@ CREATE TABLE Books (
 );
 
 CREATE TABLE Customers (
-    CUSTOMER_ID INT PRIMARY KEY AUTO_INCREMENT,
-    CUSTOMER_NAME VARCHAR(215) NOT NULL,
-    EMAIL VARCHAR(215),
-    ADDRESS TEXT
+    customer_id , 
+    customer_name VARCHAR(215), 
+    email VARCHAR(215), 
+    address TEXT
 );
 
 CREATE TABLE Orders (
