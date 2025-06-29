@@ -22,11 +22,12 @@ CREATE TABLE Customers (
 );
 
 CREATE TABLE Orders (
-    order_id INT,
+    order_id INT PRIMARY KEY AUTO_INCREMENT,
     customer_id INT,
     order_date DATE,
-    FOREIGN KEY (customer_id)
+    FOREIGN KEY (customer_id) REFERENCES Customers(customer_id)
 );
+
 
 CREATE TABLE Order_Details (
     ORDERDETAILID INT PRIMARY KEY AUTO_INCREMENT,
